@@ -1,0 +1,40 @@
+.advantages
+	padding: 90px 0
+	background: url('../img/back.jpg') no-repeat center top
+	background-size: cover
+	&__content
+		display: flex
+		justify-content: space-between
+	&__title
+		text-align: left
+		margin-bottom: 45px
+	&__info
+		.item
+			padding-left: 80px
+			line-height: 1.35
+			+nlt
+				margin-bottom: 30px
+			&:before
+				border-radius: 50%
+				border: 6px solid #bde6e2
+		.img-wrap
+			position: relative
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: -372px
+				right: -40px
+				+sprite($before_pick)
+		.product
+			bottom: 47px
+
+	&__cost
+		width: 312px
+		padding-left: 45px
+
+	.info
+		&__list
+			width: 300px
+			font-weight: 500
+			margin-bottom: 26px
