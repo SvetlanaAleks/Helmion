@@ -1,7 +1,6 @@
 body
-	background: $mainColor
-	font-family: Arial, Helvetica, sans-serif
-	font-size: 14px
+	font-family: 'Roboto', Arial, Helvetica, sans-serif
+	font-size: 16px
 
 // Font icons
 .fico
@@ -10,3 +9,30 @@ body
 	&::before
 		display: block
 
+.block
+	+r(1023)
+		padding: 40px 0
+	+r(767)
+		padding: 30px 0
+	+r(479)
+		padding: 25px 0
+
+.title
+	font-size: 45px
+	line-height: 46px
+	text-align: center
+	font-weight: 900
+	margin: 0 auto
+	color: #313e47
+	+r(1199)
+		font-size: 36px
+		line-height: 37px
+	+r(1023)
+		font-size: 32px
+		line-height: 33px
+	+r(767)
+		font-size: 29px
+		line-height: 30px
+	+r(479)
+		font-size: 26px
+		line-height: 27px
