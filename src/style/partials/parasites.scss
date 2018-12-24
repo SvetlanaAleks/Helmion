@@ -1,5 +1,6 @@
 .parasites {
   background: #ecf1f1;
+  padding: 50px 0;
 
 }
 
@@ -30,6 +31,8 @@
 
 .parasites-fixed {
   width: 390px;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
   flex: none;
 
   @include r(1199) {
@@ -55,6 +58,8 @@
 
 .parasites-slider {
   display: flex;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
 }
 
 
@@ -64,7 +69,7 @@
   flex: none;
 
   @include r(1199) {
-    width: 230px;
+    width: 210px;
   }
 
 }
