@@ -33,6 +33,7 @@
 				position: absolute
 				top: 50%
 				transform: translateY(-50%)
+				transition: all .3s
 				&-header-icon-1
 					left: -8px
 					font-size: 37px
@@ -47,7 +48,9 @@
 			border-bottom: 1px dashed transparentize(#000000, .5)
 			transition: all .3s
 			&:hover
-				border-bottom: 1px dashed transparentize(#000000, .2)
+				border-bottom-color: transparentize(#000000, .9999999999)
+				.fico
+					color: #fc8144
 	&__main
 		display: flex
 		justify-content: flex-start
@@ -332,7 +335,7 @@
 	border: none
 	outline: none
 	cursor: pointer
-	background-image: linear-gradient(to right, #fd7532, #fb905c 51%, #fd7532)
+	background: linear-gradient(to right, #fd7532, #fb905c 51%, #fd7532)
 	border-radius: 32px
 	color: white
 	padding: 10px 0 9px 0
@@ -340,7 +343,9 @@
 	font-weight: 700
 	border-bottom: 6px solid #e46324
 	box-shadow: 0 12px 23px -10px rgba(#fd7532,.52)
-	
+	transition: background .3s
+	&:hover
+		background: linear-gradient(to right, #fb905c, #f85708)
 	.small
 		display: block
 		font-size: 17px
