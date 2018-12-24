@@ -1,0 +1,80 @@
+//popup style
+.ever-popup
+	&__close
+		right: 10px !important
+		top: 10px !important
+		&::after, &::before
+			background: red !important
+			height: 3px !important
+			width: 23px !important
+			top: 50% !important
+			transform-origin: 0 100% !important
+		&::after
+			transform: rotate(-45deg) translate(-50%, 50%) !important
+		&::before
+			transform: rotate(45deg) translate(-50%, 50%) !important
+	&__inner
+		padding-top: 0 !important
+	&__body
+.popup
+	border-radius: 10px
+	background-color: #f3fafd
+	width: 830px
+	height: 610px
+	+r(991)
+		width: 300px !important
+	&__wrap
+		padding: 0 60px
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		height: 100%
+		+r(991)
+			padding: 30px 20px 20px 20px
+			align-items: center
+		.popup-left
+			position: relative
+			display: flex
+			flex-direction: column
+			padding-top: 50px
+			padding-bottom: 30px
+		.popup-logo
+			display: flex
+			align-items: flex-start
+			justify-content: center
+			margin-bottom: 107px
+			.logo
+				margin-right: 20px
+		.product
+			width: 445px
+			left: -35px
+			position: relative
+			z-index: 1
+			top: -50px
+		.popup-img
+			position: absolute
+			left: -102px
+			bottom: 101px
+			width: 750px
+		.img-wrap
+			position: relative
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: -27px
+				left: -40px
+				transform: rotate(-28deg) scale(.8)
+				+sprite($before_pick)
+		.form
+			align-self: center
+			margin-bottom: 0
+	.info__cost
+		margin: auto
+		width: 270px
+		line-height: 57px
+		padding-left: 13px
+		&::after, &::before
+			display: none
+		.fico
+			right: 24px
