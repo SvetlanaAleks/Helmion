@@ -1,0 +1,124 @@
+.doctor{
+    background-color: #ecf1f1;
+    padding: 88px 0 0;
+    &__cont{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 39px;
+        align-items: flex-end;
+    }
+    &__img{
+        width: 596px;
+        margin-left: -50px;
+        & img{
+            width: 100%;
+            display: block;
+        }
+    }
+    &__text{
+        width: 588px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 40px;        
+        &::before{
+            content: '';
+            width: 37px;
+            height: 32px;
+            background-image: url(../img/doctor__before.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__description{
+        font-size: 18px;
+        color: #444444;
+        margin-top: 40px;
+        width: 100%;
+        line-height: 1.5;
+        &_color{
+            color: #222222;
+            font-weight: 500;
+        }
+        &:nth-child(1){
+            margin-top: 62px;
+        }
+    }
+    &__border{
+        width: 40px;
+        height: 5px;
+        background-color: #199489;
+        margin-top: 26px;
+    }
+    &__name{
+        font-size: 24px;
+        color: #313e47;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    &__experience{
+        font-size: 18px;
+        color: #666666;
+        font-style: italic;
+        margin-top: 11px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .doctor__img{
+        width: 500px;
+    }
+    .doctor__text{
+        width: 500px;
+    }
+    .doctor__description:nth-child(1){
+        margin-top: 40px;  
+    }
+    .doctor__description{
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .doctor.block{
+        padding-bottom: 0;
+    }
+    .doctor__cont{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .doctor__img{
+        margin-left: 0;
+    }
+    .doctor__name{
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width: 639px){
+    .doctor__text{
+        width: 100%;
+    }
+    .doctor__img{
+        width: 100%; 
+    }
+    .doctor__border{
+        margin-top: 15px;
+    }
+    .doctor__name{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    .doctor__experience{
+        font-size: 16px;
+    }
+    .doctor__cont{
+        margin-top: 20px;
+    }
+}
