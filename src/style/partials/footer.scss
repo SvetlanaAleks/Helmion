@@ -1,0 +1,91 @@
+// desctop
+.footer {
+	font-family: 'Myriad Pro', sans-serif;
+	padding: 113px 0 30px;
+	color: #666666;
+}
+
+.footer__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__logo {
+	width: 54px;
+	height: 49px;
+	margin-right: 28px;
+}
+
+.footer__prod {
+	margin-bottom: 5px;
+}
+
+.footer__privacy {
+	display: block;
+	color: #666666;
+	margin-bottom: 5px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer__left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.footer__center {
+	text-align: center;
+}
+
+.footer__right {
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.footer__numbers {
+	margin-bottom: 5px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
+// media
+@include r(1023) {
+	.footer {
+		font-size: 16px;
+		padding-top: 55px;
+	}
+}
+
+@include r(767) {
+	.footer__right {
+		display: none;
+	}
+
+	.footer__name {
+		display: none;
+	}
+
+	.footer__adress {
+		display: none;
+	}
+
+	.footer__wrap {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer__logo {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}
+
+@include r(479) {}
