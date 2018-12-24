@@ -43,5 +43,14 @@
   "dependencies": {
     "body-scroll-lock": "^2.5.7",
     "object-fit-images": "^3.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SvetlanaAleks/Helmion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SvetlanaAleks/Helmion/issues"
+  },
+  "homepage": "https://github.com/SvetlanaAleks/Helmion#readme"
+
 }
