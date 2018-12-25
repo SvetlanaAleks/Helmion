@@ -63,7 +63,7 @@
 			position: relative
 			margin: 0 7px
 			&:after,&:before
-				content: ""
+				content: ''
 				width: 1px
 				height: 70px
 				background-color: #000010
@@ -90,7 +90,7 @@
 			position: relative
 			margin-left: 68px
 			&:before
-				content: ""
+				content: ''
 				width: 50px
 				height: 230px
 				position: absolute
@@ -135,7 +135,7 @@
 		border-radius: 50px
 		position: relative
 		&:before
-			content: ""
+			content: ''
 			position: absolute
 			top: -10px
 			left: 50%
@@ -146,7 +146,7 @@
 			border-width: 0 15px 10px 15px
 			border-color: transparent transparent #fee9e9 transparent
 
-@media screen and (max-width: 1199px)
+@include r(1199)
 	.others
 		&-content
 			margin-top: 30px
@@ -177,7 +177,7 @@
 			height: auto
 			padding: 10px 0
 			line-height: normal
-@media screen and (max-width: 1023px)
+@include r(1023)
 	.others
 		&-content
 			margin-top: 25px
@@ -233,7 +233,7 @@
 		max-width: 53%
 		margin-bottom: 12px
 
-@media screen and (max-width: 767px)
+@include r(767)
 	.others
 		.title
 			br
@@ -284,7 +284,7 @@
 				display: none
 	.other-width
 		margin-bottom: 13px
-@media screen and (max-width: 639px)
+@include r(639)
 	.others
 		&-content
 			margin-top: 15px

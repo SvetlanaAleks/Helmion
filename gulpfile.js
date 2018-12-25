@@ -92,7 +92,11 @@ gulp.task("html:build", function() {
   gulp
     .src(path.src.html)
     .pipe(include())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true
+      })
+    )
     .on("error", function(err) {
       console.log(err.toString());
 
@@ -110,7 +114,11 @@ gulp.task("html:deploy", function() {
   gulp
     .src(path.src.html)
     .pipe(include())
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true
+      })
+    )
     .pipe(gulp.dest(path.deploy.html));
 });
 
@@ -154,7 +162,11 @@ gulp.task("js-lib:build", function() {
 gulp.task("js:build", function() {
   gulp
     .src(path.src.js)
-    .pipe(sourcemaps.init({ largeFile: true }))
+    .pipe(
+      sourcemaps.init({
+        largeFile: true
+      })
+    )
     .on("error", function(err) {
       console.log(err.toString());
 
@@ -207,7 +219,11 @@ gulp.task("style:build", function() {
   ];
   gulp
     .src(path.src.style)
-    .pipe(sourcemaps.init({ largeFile: true }))
+    .pipe(
+      sourcemaps.init({
+        largeFile: true
+      })
+    )
     .pipe(wait(500))
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss(processors))
