@@ -2,7 +2,8 @@
   background: #ecf1f1;
   padding: 50px 0;
 
-  .slick-next, .slick-prev {
+  .slick-next,
+  .slick-prev {
     position: absolute;
     top: 285px;
     width: 40px;
@@ -17,14 +18,14 @@
     z-index: 10;
     cursor: pointer;
     opacity: 0.7;
-    
+
     &:before {
       content: "";
       width: 20px;
       height: 19px;
-      background: url("../img/svg/arrow-parasites.svg");
+      background: url("../img/arrow-parasites.svg");
     }
-    
+
   }
 
   .slick-prev {
@@ -40,13 +41,17 @@
   }
 
   @include r(639) {
-    .slick-next, .slick-prev {
+
+    .slick-next,
+    .slick-prev {
       top: 307px;
     }
   }
 
   @include r(479) {
-    .slick-next, .slick-prev {
+
+    .slick-next,
+    .slick-prev {
       top: 335px;
     }
   }
@@ -258,6 +263,7 @@
   }
 
 }
+
 .parasites-fixed__item:nth-child(2n),
 .parasites-block__item:nth-child(2n) {
   background: #faf7e9;

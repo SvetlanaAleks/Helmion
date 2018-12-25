@@ -375,18 +375,18 @@ gulp.task("svg-ico:build", function() {
         cssClass: "fico"
       })
     )
-    // .pipe(
-    //   iconfont({
-    //     fontName: "fico", // required
-    //     prependUnicode: true, // recommended option
-    //     formats: ["ttf", "eot", "woff", "woff2", "svg"], // default, 'woff2' and 'svg' are available
-    //     normalize: true,
-    //     fontHeight: 1001,
-    //     fontStyle: "normal",
-    //     fontWeight: "normal"
-    //   })
-    // )
-    // .pipe(gulp.dest("src/fonts/icons"));
+    .pipe(
+      iconfont({
+        fontName: "fico", // required
+        prependUnicode: true, // recommended option
+        formats: ["ttf", "eot", "woff", "woff2", "svg"], // default, 'woff2' and 'svg' are available
+        normalize: true,
+        fontHeight: 1001,
+        fontStyle: "normal",
+        fontWeight: "normal"
+      })
+    )
+    .pipe(gulp.dest("src/fonts/icons"));
 });
 
 gulp.task("fonts:build", function() {
