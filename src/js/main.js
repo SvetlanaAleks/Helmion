@@ -2,6 +2,10 @@
 
 //=require partials/app.js
 
+$('.comments__main').mCustomScrollbar({
+    axis: 'y'
+});
+
 $(document).ready(function () {
-   App.init();
+    App.init();
 });

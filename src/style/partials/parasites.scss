@@ -2,7 +2,8 @@
   background: #ecf1f1;
   padding: 50px 0;
 
-  .slick-next, .slick-prev {
+  .slick-next,
+  .slick-prev {
     position: absolute;
     top: 285px;
     width: 40px;
@@ -22,7 +23,7 @@
       content: "";
       width: 20px;
       height: 19px;
-      background: url("../img/svg/arrow-parasites.svg");
+      background: url("../img/agit rrow-parasites.svg");
     }
 
   }
@@ -40,7 +41,9 @@
   }
 
   @include r(639) {
-    .slick-next, .slick-prev {
+
+    .slick-next,
+    .slick-prev {
       top: 307px;
     }
   }
@@ -271,6 +274,7 @@
   }
 
 }
+
 .parasites-fixed__item:nth-child(2n),
 .parasites-block__item:nth-child(2n) {
   background: #faf7e9;
