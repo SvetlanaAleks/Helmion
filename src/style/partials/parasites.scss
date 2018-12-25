@@ -136,6 +136,10 @@
 .parasites-img {
   margin-right: 15px;
 
+  img {
+    border-radius: 3px;
+  }
+
   @include r(1023) {
     margin: 0;
   }
@@ -213,6 +217,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+}
+
+.parasites-block__title {
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 2px;
+    height: 3px;
+    background: #199589;
+    position: absolute;
+    left: -1px;
+    bottom: -3px;
   }
 
 }
