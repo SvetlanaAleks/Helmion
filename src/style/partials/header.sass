@@ -110,6 +110,7 @@
 	&__title
 		text-align: left
 		margin-bottom: 40px
+
 		+r(1023)
 			margin-bottom: 25px
 			text-align: center
@@ -474,3 +475,9 @@
 		display: block
 		font-size: 17px
 		line-height: 0.73
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+	.header__title
+		font-size: 40px
+	
+	
