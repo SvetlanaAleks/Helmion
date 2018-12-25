@@ -361,33 +361,7 @@ gulp.task("spriteSVG:build", function() {
     .pipe(gulp.dest("src/img/svg"));
 });
 
-gulp.task("svg-ico:build", function() {
-  return gulp
-    .src(path.src.svgico)
-    .pipe(wait(1000))
-    .pipe(svgo())
-    .pipe(
-      iconfontCss({
-        fontName: "fico", // required
-        target: "src/style/partials/font-icons.scss",
-        targetPath: "../../style/partials/font-icons.scss",
-        fontPath: "../fonts/icons/",
-        cssClass: "fico"
-      })
-    )
-    .pipe(
-      iconfont({
-        fontName: "fico", // required
-        prependUnicode: true, // recommended option
-        formats: ["ttf", "eot", "woff", "woff2", "svg"], // default, 'woff2' and 'svg' are available
-        normalize: true,
-        fontHeight: 1001,
-        fontStyle: "normal",
-        fontWeight: "normal"
-      })
-    )
-    .pipe(gulp.dest("src/fonts/icons"));
-});
+gulp.task("svg-ico:build");
 
 gulp.task("fonts:build", function() {
   gulp.src(path.src.fonts).pipe(gulp.dest(path.build.fonts));
