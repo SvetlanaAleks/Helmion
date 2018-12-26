@@ -60,7 +60,7 @@ svg {
 	width: 400px;
 	flex-shrink: 0;
 	margin-right: 30px;
-	box-shadow: 0px 0px 10px 0px rgba(59,117,111,0.4);
+	box-shadow: 0px 0px 10px 0px rgba(59, 117, 111, 0.4);
 }
 
 
@@ -95,6 +95,7 @@ svg {
 	color: #444444;
 	padding-left: 31px;
 	position: relative;
+
 	&::before {
 		content: '';
 		width: 20px;
@@ -110,14 +111,17 @@ svg {
 
 .material__item-do {
 	justify-content: flex-end;
+
 	.material__img {
 		margin-right: 0;
 		margin-left: 15px;
 	}
+
 	.material__descr {
 		text-align: right;
 		padding-left: 0;
 		padding-right: 31px;
+
 		&::before {
 			left: auto;
 			right: -11px;
@@ -154,19 +158,19 @@ svg {
 
 .material__man-left {
 	position: absolute;
-    top: -16px;
-    left: -42px;
+	top: -16px;
+	left: -42px;
 }
 
 .material__man-right {
 	position: absolute;
 	top: -18px;
-    right: -90px;
+	right: -90px;
 }
 
 
 @include r(1200) {
-	
+
 	.subtitle-material {
 		margin-bottom: 35px;
 	}
@@ -188,17 +192,19 @@ svg {
 	.material__descr {
 		padding-left: 20px;
 		font-size: 17px;
+
 		&::before {
-    			left: 0px;
-    		}
+			left: 0px;
+		}
 	}
 
 	.material__item-do {
 		.material__descr {
-    		padding-right: 20px;
-    		&::before {
-    			right: -20px;
-    		}
+			padding-right: 20px;
+
+			&::before {
+				right: -20px;
+			}
 		}
 	}
 
@@ -207,7 +213,7 @@ svg {
 	}
 
 	.material__man-right {
-	    right: -120px;
+		right: -120px;
 	}
 }
 
@@ -221,11 +227,12 @@ svg {
 	}
 
 	.subtitle-material {
-	    margin-bottom: 25px;
-	    font-size: 21px;
+		margin-bottom: 25px;
+		font-size: 21px;
 	}
 
-	.material__stat, .material__text {
+	.material__stat,
+	.material__text {
 		font-size: 20px;
 	}
 
@@ -275,11 +282,13 @@ svg {
 			padding-right: 0;
 			padding-left: 20px;
 			text-align: left;
+
 			&::before {
 				right: 0;
 				left: 0px;
 			}
 		}
+
 		.material__img {
 			margin-left: 0;
 			margin-right: 15px;
@@ -291,9 +300,10 @@ svg {
 	}
 }
 
-@include r(479){
+@include r(479) {
 	.subtitle-material {
 		font-size: 18px;
+
 		br {
 			display: none;
 		}
@@ -311,7 +321,8 @@ svg {
 		font-size: 15px;
 	}
 
-	.material__stat, .material__text {
+	.material__stat,
+	.material__text {
 		font-size: 18px;
 	}
 
@@ -319,10 +330,3 @@ svg {
 		margin-bottom: 10px;
 	}
 }
-
-
-
-
-
-
-

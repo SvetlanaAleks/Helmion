@@ -33,6 +33,7 @@
   border-radius: 5px;
   box-shadow: 0px 0px 15px 0px rgba(59, 117, 111, 0.15);
 }
+
 .methods__content {
   height: 340px;
 }
@@ -44,6 +45,7 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
 .methods__text-block {
   text-align: center;
   padding: 0 60px;
@@ -100,64 +102,78 @@
   margin: 0 auto;
   border-radius: 50px;
 }
-.methods__bottom-line::after {
-  content: "";
-  width: 30px;
-  height: 12px;
-  position: absolute;
-  background-image: url(../../img/arrow-top.png);
-  top: -12px;
-  left: 50%;
-  transform: translate(-50%);
-}
+
+// .methods__bottom-line::after {
+//   content: "";
+//   width: 30px;
+//   height: 12px;
+//   position: absolute;
+//   background-image: url(../../img/arrow-top.png);
+//   top: -12px;
+//   left: 50%;
+//   transform: translate(-50%);
+// }
 
 @media (max-width: 1200px) {
   .methods__content {
     height: 360px;
   }
+
   .methods__title {
     font-size: 36px;
   }
 }
+
 @media (max-width: 1024px) {
   .methods__title {
     font-size: 32px;
   }
+
   .methods__text-block {
     padding: 0 20px;
   }
+
   .methods__content {
     height: 390px;
   }
+
   .methods__conclusion-block {
     padding: 0 35px;
   }
+
   .methods__bottom-line {
     font-size: 22px;
   }
+
   .methods__bottom-line::after {
     height: 13px;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
+
 @media (max-width: 768px) {
   .methods__content {
     height: 410px;
   }
+
   .methods__item-title {
     font-size: 24px;
   }
+
   .methods__conclusion-block {
     padding: 0 15px;
     font-size: 18px;
   }
+
   .methods__bottom-line {
     font-size: 20px;
   }
+
   .methods {
     padding: 30px 0;
   }
+
   .methods__title {
     font-size: 29px;
   }
@@ -167,13 +183,16 @@
   .methods__item {
     width: 100%;
   }
+
   .methods__content {
     height: auto;
     margin-bottom: 20px;
   }
+
   .methods__bottom-line::after {
     display: none;
   }
+
   .methods__wrap {
     margin-bottom: 30px;
   }
@@ -181,6 +200,7 @@
   .methods__item:first-child {
     margin-bottom: 100px;
   }
+
   .methods__bottom-line {
     padding: 10px 20px;
   }
@@ -190,9 +210,11 @@
   .methods {
     padding: 25px 0;
   }
+
   .methods__bottom-line {
     font-size: 18px;
   }
+
   .methods__title {
     font-size: 26px;
   }

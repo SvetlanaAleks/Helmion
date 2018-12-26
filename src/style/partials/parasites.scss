@@ -49,7 +49,9 @@
   }
 
   @include r(479) {
-    .slick-next, .slick-prev {
+
+    .slick-next,
+    .slick-prev {
       top: 300px;
     }
   }
@@ -78,6 +80,11 @@
 
   .font-bold {
     color: #222222;
+  }
+
+  @include r(479) {
+    max-width: 300px;
+    margin: 0 auto;
   }
 
 }
@@ -184,9 +191,9 @@
     width: 230px;
   }
 
-  //@include r(479) {
-  //  width: 160px;
-  //}
+  @include r(479) {
+    width: 160px;
+  }
 
 }
 
@@ -269,7 +276,7 @@
   }
 
   @include r(639) {
-    min-height: 183px;
+    min-height: 163px;
   }
 
   @include r(479) {

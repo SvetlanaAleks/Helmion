@@ -112,6 +112,7 @@
 
     .doctor__img {
         margin-left: 0;
+        width: 320px;
     }
 
     .doctor__name {
@@ -124,9 +125,6 @@
         width: 100%;
     }
 
-    .doctor__img {
-        width: 100%;
-    }
 
     .doctor__border {
         margin-top: 15px;
@@ -143,5 +141,11 @@
 
     .doctor__cont {
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .doctor__img{
+        display: none;
     }
 }
