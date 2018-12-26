@@ -1,65 +1,39 @@
 
 //Some JS
-let slider1 = $('.parasites-slider');
-
-function initSlider(slider, options) {
-    slider.on('init', function () {
-        setTimeout(function () {
-            slider.addClass('is-ready');
-        }, 100);
-    });
-    slider.not('.slick-initialized').slick(options);
-}
-
-
-function destroySlider(slider) {
-    if (slider.hasClass('slick-initialized')) {
-        slider.slick('unslick');
-    }
-}
-
-function showSlider() {
-    let tablet = ($(window).width()) <= 1023;
-    if (tablet) {
-        initSlider(slider1, {
-            variableWidth: true,
-            responsive: [{
-                breakpoint: 1023,
-                settings: {
-                    slidesToShow: 2,
-
-                    slidesToScroll: 1
-                }
-            },
+function triggerSlider() {
+    let slider = $('.parasites-slider');
+    let breakpoint = ($(window).width()) <= 1023;
+    if (breakpoint && !slider.hasClass('slick-initialized')) {
+        slider.slick({
+            autoplay: false,
+            mobileFirst: true,
+            responsive: [
                 {
-                    breakpoint: 768,
+                    breakpoint: 320,
                     settings: {
                         slidesToShow: 1,
-
                         slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
                     }
                 }
             ]
         });
-    } else {
-        destroySlider(slider1);
+    } else if (!breakpoint && slider.hasClass('slick-initialized')) {
+        slider.slick('unslick');
     }
 }
 
-function mySlider() {
-    let mytablet = ($(window).width()) >= 1024;
-    if (mytablet) {
-        destroySlider(slider1);
-    }
-    setTimeout(mySlider, 500);
-}
+triggerSlider();
 
-mySlider();
-showSlider();
-$(window).on('resize', mySlider);
-$(window).on('resize', showSlider);
-
-
+$(window).on('resize', triggerSlider);
 
 const App = (function () {
    "use strict";
