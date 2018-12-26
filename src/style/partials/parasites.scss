@@ -23,7 +23,7 @@
       content: "";
       width: 20px;
       height: 19px;
-      background: url("../img/agit rrow-parasites.svg");
+      background: url("../img/arrow-parasites.svg");
     }
 
   }
@@ -177,12 +177,16 @@
   }
 
   @include r(767) {
+    width: 320px;
+  }
+
+  @include r(639) {
     width: 230px;
   }
 
-  @include r(767) {
-    width: 160px;
-  }
+  //@include r(479) {
+  //  width: 160px;
+  //}
 
 }
 
