@@ -86,7 +86,8 @@ svg {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	margin-bottom: 28px;
+	margin-bottom: 10px;
+	min-height: 80px;
 }
 
 .material__descr {
@@ -270,6 +271,7 @@ svg {
 
 	.material__item {
 		margin-bottom: 15px;
+		min-height: auto;
 	}
 
 	.material__item-do {

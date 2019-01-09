@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width: 1199px) {
+    .doctor {
+        padding-bottom: 0;
+    }
+
     .doctor__img {
         width: 500px;
     }
@@ -144,8 +148,8 @@
     }
 }
 
-@media screen and (max-width: 480px){
-    .doctor__img{
+@media screen and (max-width: 480px) {
+    .doctor__img {
         display: none;
     }
 }

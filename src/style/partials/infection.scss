@@ -1,32 +1,37 @@
-.infection{
+.infection {
     padding: 90px 0;
-    
-    & .title{
+
+    & .title {
         width: 750px;
     }
-    & .wrap{
+
+    & .wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    &__result{
+    &__result {
         display: flex;
         width: 100%;
         justify-content: space-between;
         margin-top: 61px;
     }
-    &__item{
+
+    &__item {
         width: 270px;
         border-radius: 7px;
         box-shadow: 0 0 24px 2px #e2eaea;
-        &-img{
+
+        &-img {
             width: 100%;
             position: relative;
-            & img{
+
+            & img {
                 width: 100%;
             }
-            &_position{
+
+            &_position {
                 position: absolute;
                 width: 40px;
                 height: 40px;
@@ -41,7 +46,8 @@
                 top: -20px;
                 left: calc(50% - 20px);
             }
-            &::before{
+
+            &::before {
                 content: '';
                 position: absolute;
                 width: 100%;
@@ -51,23 +57,27 @@
                 left: 0;
             }
         }
-        &-description{
+
+        &-description {
             width: 100%;
             padding: 22px 12px 25px 21px;
             min-height: 165px;
         }
-        &-title{
+
+        &-title {
             font-size: 22px;
             color: #222222;
             font-weight: 500;
         }
-        &-text{
+
+        &-text {
             font-size: 18px;
             color: #444444;
             margin-top: 10px;
         }
     }
-    &__conclusion{
+
+    &__conclusion {
         padding: 16px 64px;
         width: 1070px;
         margin-top: 51px;
@@ -78,7 +88,8 @@
         text-align: center;
         border-radius: 100px;
         position: relative;
-        &::before{
+
+        &::before {
             content: '';
             border: 15px solid transparent;
             border-bottom: 10px solid #fee9e9;
@@ -89,77 +100,97 @@
     }
 }
 
-@media screen and (max-width: 1199px){
-    .infection{
-        padding: auto;
-    }
-    .infection__item{
+@media screen and (max-width: 1199px) {
+    .infection__item {
         width: 230px;
     }
-    .infection__item-title{
+
+    .infection__item-title {
         font-size: 18px;
     }
-    .infection__item-text{
+
+    .infection__item-text {
         font-size: 16px;
     }
-    .infection__item-description{
+
+    .infection__item-description {
         min-height: 135px;
     }
-    .infection__conclusion{
+
+    .infection__conclusion {
         width: 950px;
         font-size: 21px;
     }
-    .infection__result{
+
+    .infection__result {
         margin-top: 51px;
     }
 }
 
-@media screen and (max-width: 1023px){
-    .infection__conclusion{
+@media screen and (max-width: 1023px) {
+    .infection__conclusion {
         width: 730px;
         font-size: 20px;
     }
-    .infection__result{
+
+    .infection__result {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .infection__item{
+
+    .infection__item {
         margin: 0 10px;
     }
-    .infection__item:nth-child(3){
+
+    .infection__item:nth-child(3) {
         margin-top: 40px
     }
-    .infection__item:nth-child(4){
+
+    .infection__item:nth-child(4) {
         margin-top: 40px;
     }
-    .infection .title{
+
+    .infection .title {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 767px){
-    .infection__conclusion{
+@media screen and (max-width: 767px) {
+    .infection__conclusion {
         width: 100%;
+    }
+
+    .infection__result {
+        margin-top: 40px;
     }
 }
 
-@media screen and (max-width: 639px){
-    .infection__item{
+@media screen and (max-width: 639px) {
+    .infection__item {
         width: 200px;
     }
-    .infection__conclusion{
+
+    .infection__conclusion {
         font-size: 16px;
     }
 }
-@media screen and (max-width: 459px){
-    .infection__item:nth-child(2){
+
+@media screen and (max-width: 459px) {
+    .infection__item:nth-child(2) {
         margin-top: 40px;
     }
-    .infection__conclusion{
+
+    .infection__conclusion {
         padding: 16px 4px;
     }
+
     .infection__result {
         margin-top: 41px;
     }
-}
 
+    .infection__item-description {
+        text-align: center;
+        padding: 10px;
+        min-height: auto;
+    }
+}

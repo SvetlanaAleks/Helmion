@@ -1,6 +1,12 @@
 .others
 	padding-top: 85px
 	padding-bottom: 90px
+	&__title
+		margin-bottom: 25px
+	&__desc
+		text-align: center
+		color: #444444
+		font-size: 22px
 	&-content
 		margin-top: 40px
 		display: flex
@@ -179,6 +185,10 @@
 			line-height: normal
 @include r(1023)
 	.others
+		&__title
+			margin-bottom: 15px
+		&__desc
+			font-size: 20px
 		&-content
 			margin-top: 25px
 			flex-wrap: wrap
@@ -238,6 +248,10 @@
 		.title
 			br
 				display: none
+		&__title
+			margin-bottom: 10px
+		&__desc
+			font-size: 18px
 		&-content
 			margin-top: 20px
 			&-box
